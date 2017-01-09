@@ -23,8 +23,8 @@ parseAbsoluteCSSUnit('-72pt'); // -96
 parseAbsoluteCSSUnit('-6pc'); // -96
 parseAbsoluteCSSUnit('-96px'); // -96
 parseAbsoluteCSSUnit('-96'); // -96
-
 parseAbsoluteCSSUnit('0'); // 0
+
 parseAbsoluteCSSUnit('hello'); // Error
 parseAbsoluteCSSUnit('a'); // Error
 parseAbsoluteCSSUnit('null'); // Error
