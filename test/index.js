@@ -3,6 +3,14 @@ var expect = chai.expect;
 var parseAbsoluteCSSUnit = require('../src/index.js');
 
 it('function "parseAbsoluteCSSUnit" should return correct value', function () {
+    expect(parseAbsoluteCSSUnit(undefined)).to.equal(undefined);
+});
+
+it('function "parseAbsoluteCSSUnit" should return correct value', function () {
+    expect(parseAbsoluteCSSUnit(96)).to.equal(96);
+});
+
+it('function "parseAbsoluteCSSUnit" should return correct value', function () {
     expect(parseAbsoluteCSSUnit('1in')).to.equal(96);
 });
 
@@ -88,10 +96,6 @@ it('function "parseAbsoluteCSSUnit" should throw error', function () {
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
     expect(function(){parseAbsoluteCSSUnit(null)}).to.throw(Error, '');
-});
-
-it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit(undefined)}).to.throw(Error, '');
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
