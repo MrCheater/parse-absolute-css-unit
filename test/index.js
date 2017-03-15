@@ -71,45 +71,45 @@ it('function "parseAbsoluteCSSUnit" should return correct value', function () {
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit('hello')}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit('hello')).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit('a')}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit('a')).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit('null')}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit('null')).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit('undefined')}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit('undefined')).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit('1.1.1')}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit('1.1.1')).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit('1.b')}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit('1.b')).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit(null)}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit(null)).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit(NaN)}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit(NaN)).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit(Infinity)}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit(Infinity)).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit(-Infinity)}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit(-Infinity)).to.equal(undefined);
 });
 
 it('function "parseAbsoluteCSSUnit" should throw error', function () {
-    expect(function(){parseAbsoluteCSSUnit(true)}).to.throw(Error, '');
+    expect(parseAbsoluteCSSUnit(true)).to.equal(undefined);
 });
