@@ -1,6 +1,6 @@
 {
   "name": "parse-absolute-css-unit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "parse absolute css unit : cm mm in px pt pc",
   "main": "src/index.js",
   "devDependencies": {

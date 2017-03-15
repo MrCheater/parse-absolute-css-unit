@@ -21,6 +21,6 @@ module.exports = function parseAbsoluteCSSUnit(value) {
                 return (+result[1]);
         }
     } else {
-        throw new Error('Incorrect value: ' + value);
+        return undefined;
     }
 };
